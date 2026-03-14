@@ -927,4 +927,44 @@ neonatalDose:"Not recommended",
 route:"Oral",
 sideEffects:"Nausea, thrombosis"
 }
+function displayDrugs(list){
 
+let output="";
+
+list.forEach(d=>{
+
+output += `
+<div class="drugCard" onclick="openDrug('${d.name}')">
+
+<h3>${d.name}</h3>
+<p>${d.class}</p>
+
+</div>
+`;
+
+});
+
+document.getElementById("results").innerHTML = output;
+
+  }
+function openDrug(name){
+
+let drug = drugs.find(d => d.name === name);
+
+document.getElementById("drugDetails").style.display="block";
+
+document.getElementById("dName").innerHTML = drug.name;
+document.getElementById("dClass").innerHTML = drug.class;
+document.getElementById("dInd").innerHTML = drug.indications;
+document.getElementById("dAdult").innerHTML = drug.adultDose;
+document.getElementById("dPed").innerHTML = drug.pediatricDose;
+document.getElementById("dNeo").innerHTML = drug.neonatalDose;
+document.getElementById("dRoute").innerHTML = drug.route;
+document.getElementById("dSide").innerHTML = drug.sideEffects;
+
+  }
+function closeDrug(){
+
+document.getElementById("drugDetails").style.display="none";
+
+}
