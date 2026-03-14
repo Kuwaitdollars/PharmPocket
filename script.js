@@ -1,1 +1,929 @@
 
+{
+group:"Antibiotics",
+class:"Penicillins",
+name:"Amoxicillin",
+indications:"Respiratory infections, otitis media, sinusitis, urinary tract infection",
+adultDose:"500 mg every 8 hours",
+pediatricDose:"20–40 mg/kg/day divided every 8 hours",
+neonatalDose:"20–30 mg/kg/day divided doses",
+route:"Oral",
+sideEffects:"Rash, diarrhea, nausea, allergic reaction"
+},
+
+{
+group:"Antibiotics",
+class:"Penicillins",
+name:"Ampicillin",
+indications:"Respiratory infections, meningitis, septicemia",
+adultDose:"500 mg every 6 hours",
+pediatricDose:"50–100 mg/kg/day divided every 6 hours",
+neonatalDose:"50 mg/kg every 12 hours",
+route:"Oral, IV, IM",
+sideEffects:"Rash, diarrhea, hypersensitivity"
+},
+
+{
+group:"Antibiotics",
+class:"Penicillins",
+name:"Cloxacillin",
+indications:"Staphylococcal infections, skin infections",
+adultDose:"500 mg every 6 hours",
+pediatricDose:"25–50 mg/kg/day divided doses",
+neonatalDose:"25 mg/kg every 12 hours",
+route:"Oral, IV",
+sideEffects:"Nausea, rash, allergic reaction"
+},
+
+{
+group:"Antibiotics",
+class:"Penicillins",
+name:"Piperacillin",
+indications:"Severe infections, pseudomonas infections",
+adultDose:"3–4 g every 6–8 hours",
+pediatricDose:"240–300 mg/kg/day divided doses",
+neonatalDose:"100 mg/kg every 12 hours",
+route:"IV",
+sideEffects:"Diarrhea, rash, electrolyte imbalance"
+},
+
+{
+group:"Antibiotics",
+class:"Cephalosporins",
+name:"Ceftriaxone",
+indications:"Sepsis, pneumonia, meningitis, gonorrhea",
+adultDose:"1–2 g once daily",
+pediatricDose:"50–75 mg/kg/day",
+neonatalDose:"50 mg/kg once daily",
+route:"IV, IM",
+sideEffects:"Biliary sludging, diarrhea, rash"
+},
+
+{
+group:"Antibiotics",
+class:"Cephalosporins",
+name:"Cefuroxime",
+indications:"Respiratory infections, urinary tract infection",
+adultDose:"250–500 mg twice daily",
+pediatricDose:"20–30 mg/kg/day",
+neonatalDose:"30 mg/kg/day divided doses",
+route:"Oral, IV",
+sideEffects:"Nausea, diarrhea, rash"
+},
+
+{
+group:"Antibiotics",
+class:"Cephalosporins",
+name:"Cefotaxime",
+indications:"Sepsis, meningitis",
+adultDose:"1–2 g every 8 hours",
+pediatricDose:"100–150 mg/kg/day",
+neonatalDose:"50 mg/kg every 12 hours",
+route:"IV",
+sideEffects:"Rash, diarrhea"
+},
+
+{
+group:"Antibiotics",
+class:"Macrolides",
+name:"Azithromycin",
+indications:"Respiratory infections, chlamydia",
+adultDose:"500 mg once daily",
+pediatricDose:"10 mg/kg once daily",
+neonatalDose:"10 mg/kg once daily",
+route:"Oral, IV",
+sideEffects:"Nausea, abdominal pain, QT prolongation"
+},
+
+{
+group:"Antibiotics",
+class:"Macrolides",
+name:"Erythromycin",
+indications:"Respiratory infections, pertussis",
+adultDose:"250–500 mg every 6 hours",
+pediatricDose:"30–50 mg/kg/day",
+neonatalDose:"20 mg/kg/day",
+route:"Oral, IV",
+sideEffects:"Nausea, vomiting, abdominal cramps"
+},
+
+{
+group:"Antibiotics",
+class:"Aminoglycosides",
+name:"Gentamicin",
+indications:"Sepsis, severe gram-negative infections",
+adultDose:"5–7 mg/kg once daily",
+pediatricDose:"7 mg/kg/day",
+neonatalDose:"4–5 mg/kg every 24 hours",
+route:"IV, IM",
+sideEffects:"Nephrotoxicity, ototoxicity"
+},
+
+{
+group:"Antibiotics",
+class:"Aminoglycosides",
+name:"Amikacin",
+indications:"Severe gram-negative infections",
+adultDose:"15 mg/kg/day",
+pediatricDose:"15 mg/kg/day",
+neonatalDose:"10 mg/kg every 24 hours",
+route:"IV, IM",
+sideEffects:"Kidney toxicity, hearing loss"
+},
+
+{
+group:"Antibiotics",
+class:"Fluoroquinolones",
+name:"Ciprofloxacin",
+indications:"Urinary tract infections, gastrointestinal infections",
+adultDose:"500 mg every 12 hours",
+pediatricDose:"10–15 mg/kg every 12 hours",
+neonatalDose:"Not routinely recommended",
+route:"Oral, IV",
+sideEffects:"Tendon rupture, nausea, dizziness"
+},
+
+{
+group:"Antibiotics",
+class:"Fluoroquinolones",
+name:"Levofloxacin",
+indications:"Pneumonia, respiratory infections",
+adultDose:"500–750 mg once daily",
+pediatricDose:"10 mg/kg every 12 hours",
+neonatalDose:"Not recommended",
+route:"Oral, IV",
+sideEffects:"QT prolongation, tendonitis"
+  }
+{
+group:"Antimalarials",
+class:"Artemisinin Combination",
+name:"Artemether + Lumefantrine",
+indications:"Uncomplicated falciparum malaria",
+adultDose:"80/480 mg twice daily for 3 days",
+pediatricDose:"Weight based dosing",
+neonatalDose:"Not routinely recommended",
+route:"Oral",
+sideEffects:"Headache, dizziness, nausea"
+},
+
+{
+group:"Antimalarials",
+class:"Artemisinin Derivative",
+name:"Artesunate",
+indications:"Severe malaria",
+adultDose:"2.4 mg/kg IV at 0, 12, and 24 hours",
+pediatricDose:"2.4 mg/kg IV same schedule",
+neonatalDose:"2.4 mg/kg IV",
+route:"IV, IM",
+sideEffects:"Dizziness, nausea"
+},
+
+{
+group:"Antimalarials",
+class:"Quinolines",
+name:"Quinine",
+indications:"Severe malaria",
+adultDose:"10 mg/kg IV every 8 hours",
+pediatricDose:"10 mg/kg every 8 hours",
+neonatalDose:"10 mg/kg every 12 hours",
+route:"IV, Oral",
+sideEffects:"Cinchonism, hypoglycemia, tinnitus"
+},
+
+{
+group:"Antimalarials",
+class:"Quinolines",
+name:"Chloroquine",
+indications:"Sensitive malaria strains",
+adultDose:"600 mg base initially then 300 mg",
+pediatricDose:"10 mg/kg then 5 mg/kg",
+neonatalDose:"Not routine",
+route:"Oral",
+sideEffects:"Pruritus, visual disturbance"
+},
+
+{
+group:"Antimalarials",
+class:"Antifolate",
+name:"Sulfadoxine + Pyrimethamine",
+indications:"Malaria prophylaxis, IPT",
+adultDose:"Single dose 1500/75 mg",
+pediatricDose:"Weight based",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Rash, nausea"
+  }
+{
+group:"Analgesics",
+class:"Non-opioid",
+name:"Paracetamol",
+indications:"Fever, mild pain",
+adultDose:"500–1000 mg every 6 hours",
+pediatricDose:"10–15 mg/kg every 6 hours",
+neonatalDose:"10 mg/kg every 6–8 hours",
+route:"Oral, IV, Rectal",
+sideEffects:"Liver toxicity in overdose"
+},
+
+{
+group:"Analgesics",
+class:"NSAIDs",
+name:"Ibuprofen",
+indications:"Pain, inflammation, fever",
+adultDose:"200–400 mg every 6–8 hours",
+pediatricDose:"10 mg/kg every 6–8 hours",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Gastritis, renal impairment"
+},
+
+{
+group:"Analgesics",
+class:"NSAIDs",
+name:"Diclofenac",
+indications:"Musculoskeletal pain",
+adultDose:"50 mg every 8 hours",
+pediatricDose:"1 mg/kg every 8 hours",
+neonatalDose:"Not recommended",
+route:"Oral, IM, Rectal",
+sideEffects:"GI bleeding, gastritis"
+},
+
+{
+group:"Analgesics",
+class:"Opioids",
+name:"Morphine",
+indications:"Severe pain",
+adultDose:"2–10 mg IV every 4 hours",
+pediatricDose:"0.1 mg/kg IV",
+neonatalDose:"0.05 mg/kg",
+route:"IV, IM, Oral",
+sideEffects:"Respiratory depression, constipation"
+},
+
+{
+group:"Analgesics",
+class:"Opioids",
+name:"Tramadol",
+indications:"Moderate to severe pain",
+adultDose:"50–100 mg every 6 hours",
+pediatricDose:"1–2 mg/kg",
+neonatalDose:"Not recommended",
+route:"Oral, IV",
+sideEffects:"Dizziness, nausea"
+  }
+{
+group:"Antihypertensives",
+class:"ACE inhibitors",
+name:"Enalapril",
+indications:"Hypertension, heart failure",
+adultDose:"5–20 mg daily",
+pediatricDose:"0.1 mg/kg/day",
+neonatalDose:"0.05 mg/kg/day",
+route:"Oral",
+sideEffects:"Cough, hyperkalemia"
+},
+
+{
+group:"Antihypertensives",
+class:"ACE inhibitors",
+name:"Lisinopril",
+indications:"Hypertension",
+adultDose:"10–40 mg daily",
+pediatricDose:"0.07 mg/kg/day",
+neonatalDose:"Not routine",
+route:"Oral",
+sideEffects:"Dry cough, hypotension"
+},
+
+{
+group:"Antihypertensives",
+class:"Calcium Channel Blockers",
+name:"Amlodipine",
+indications:"Hypertension, angina",
+adultDose:"5–10 mg daily",
+pediatricDose:"0.1 mg/kg/day",
+neonatalDose:"Not routine",
+route:"Oral",
+sideEffects:"Edema, flushing"
+},
+
+{
+group:"Antihypertensives",
+class:"Beta Blockers",
+name:"Propranolol",
+indications:"Hypertension, arrhythmias",
+adultDose:"40–160 mg/day",
+pediatricDose:"1–2 mg/kg/day",
+neonatalDose:"0.5 mg/kg/day",
+route:"Oral, IV",
+sideEffects:"Bradycardia, fatigue"
+},
+
+{
+group:"Antihypertensives",
+class:"Central acting",
+name:"Methyldopa",
+indications:"Hypertension in pregnancy",
+adultDose:"250–500 mg every 8 hours",
+pediatricDose:"10 mg/kg/day",
+neonatalDose:"Not routine",
+route:"Oral",
+sideEffects:"Sedation, dry mouth"
+}
+{
+group:"Diuretics",
+class:"Loop Diuretics",
+name:"Furosemide",
+indications:"Edema, heart failure",
+adultDose:"20–80 mg daily",
+pediatricDose:"1 mg/kg/dose",
+neonatalDose:"1 mg/kg",
+route:"Oral, IV",
+sideEffects:"Hypokalemia, dehydration"
+},
+
+{
+group:"Diuretics",
+class:"Thiazides",
+name:"Hydrochlorothiazide",
+indications:"Hypertension, edema",
+adultDose:"12.5–50 mg daily",
+pediatricDose:"1–2 mg/kg/day",
+neonatalDose:"Not routine",
+route:"Oral",
+sideEffects:"Hypokalemia, hyperglycemia"
+},
+
+{
+group:"Diuretics",
+class:"Potassium sparing",
+name:"Spironolactone",
+indications:"Heart failure, ascites",
+adultDose:"25–100 mg daily",
+pediatricDose:"1–3 mg/kg/day",
+neonatalDose:"1 mg/kg/day",
+route:"Oral",
+sideEffects:"Hyperkalemia, gynecomastia"
+},
+
+{
+group:"Diuretics",
+class:"Osmotic",
+name:"Mannitol",
+indications:"Cerebral edema",
+adultDose:"0.25–1 g/kg IV",
+pediatricDose:"0.5–1 g/kg IV",
+neonatalDose:"0.5 g/kg",
+route:"IV",
+sideEffects:"Electrolyte imbalance"
+  }
+{
+group:"Antidiabetics",
+class:"Biguanides",
+name:"Metformin",
+indications:"Type 2 diabetes mellitus",
+adultDose:"500–1000 mg twice daily",
+pediatricDose:"500 mg twice daily (age >10 years)",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"GI upset, lactic acidosis (rare)"
+},
+
+{
+group:"Antidiabetics",
+class:"Sulfonylureas",
+name:"Glibenclamide",
+indications:"Type 2 diabetes",
+adultDose:"2.5–5 mg daily",
+pediatricDose:"Not routinely used",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Hypoglycemia, weight gain"
+},
+
+{
+group:"Antidiabetics",
+class:"Insulin",
+name:"Regular Insulin",
+indications:"Diabetes mellitus, diabetic ketoacidosis",
+adultDose:"Individualized dosing",
+pediatricDose:"0.5–1 unit/kg/day",
+neonatalDose:"0.25–0.5 unit/kg/day",
+route:"SC, IV",
+sideEffects:"Hypoglycemia, weight gain"
+},
+
+{
+group:"Antidiabetics",
+class:"Insulin",
+name:"Insulin Glargine",
+indications:"Long-term glucose control",
+adultDose:"10 units daily starting dose",
+pediatricDose:"0.2–0.4 units/kg/day",
+neonatalDose:"Specialist use",
+route:"Subcutaneous",
+sideEffects:"Hypoglycemia"
+  }
+{
+group:"Anticoagulants",
+class:"Heparins",
+name:"Heparin",
+indications:"Prevention and treatment of thrombosis",
+adultDose:"5000 units SC every 8–12 hours",
+pediatricDose:"75 units/kg loading",
+neonatalDose:"50 units/kg",
+route:"IV, SC",
+sideEffects:"Bleeding, thrombocytopenia"
+},
+
+{
+group:"Anticoagulants",
+class:"Low Molecular Weight Heparin",
+name:"Enoxaparin",
+indications:"DVT prophylaxis and treatment",
+adultDose:"40 mg daily",
+pediatricDose:"1 mg/kg every 12 hours",
+neonatalDose:"1.5 mg/kg every 12 hours",
+route:"Subcutaneous",
+sideEffects:"Bleeding"
+},
+
+{
+group:"Anticoagulants",
+class:"Vitamin K Antagonists",
+name:"Warfarin",
+indications:"Prevention of thromboembolism",
+adultDose:"2–10 mg daily depending on INR",
+pediatricDose:"0.2 mg/kg/day",
+neonatalDose:"Rarely used",
+route:"Oral",
+sideEffects:"Bleeding, skin necrosis"
+  }
+{
+group:"Antiplatelets",
+class:"Salicylates",
+name:"Aspirin",
+indications:"Prevention of myocardial infarction, stroke",
+adultDose:"75–150 mg daily",
+pediatricDose:"3–5 mg/kg/day",
+neonatalDose:"Not routine",
+route:"Oral",
+sideEffects:"Gastric irritation, bleeding"
+},
+
+{
+group:"Antiplatelets",
+class:"P2Y12 inhibitors",
+name:"Clopidogrel",
+indications:"Acute coronary syndrome, stroke prevention",
+adultDose:"75 mg daily",
+pediatricDose:"0.2 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral",
+sideEffects:"Bleeding, rash"
+}
+{
+group:"Anticonvulsants",
+class:"Benzodiazepines",
+name:"Diazepam",
+indications:"Seizures, status epilepticus",
+adultDose:"5–10 mg IV",
+pediatricDose:"0.2–0.5 mg/kg",
+neonatalDose:"0.1–0.3 mg/kg",
+route:"IV, Rectal",
+sideEffects:"Respiratory depression, sedation"
+},
+
+{
+group:"Anticonvulsants",
+class:"Hydantoins",
+name:"Phenytoin",
+indications:"Seizure control",
+adultDose:"100 mg three times daily",
+pediatricDose:"5–8 mg/kg/day",
+neonatalDose:"5 mg/kg/day",
+route:"Oral, IV",
+sideEffects:"Gingival hyperplasia, rash"
+},
+
+{
+group:"Anticonvulsants",
+class:"Valproates",
+name:"Sodium Valproate",
+indications:"Epilepsy, bipolar disorder",
+adultDose:"500–2000 mg/day",
+pediatricDose:"20–40 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral, IV",
+sideEffects:"Weight gain, liver toxicity"
+},
+
+{
+group:"Anticonvulsants",
+class:"Iminostilbenes",
+name:"Carbamazepine",
+indications:"Epilepsy, trigeminal neuralgia",
+adultDose:"200–1200 mg/day",
+pediatricDose:"10–20 mg/kg/day",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Drowsiness, rash"
+  }
+{
+group:"Antihistamines",
+class:"First Generation",
+name:"Chlorpheniramine",
+indications:"Allergic reactions",
+adultDose:"4 mg every 6 hours",
+pediatricDose:"0.1 mg/kg/dose",
+neonatalDose:"Not recommended",
+route:"Oral, IV",
+sideEffects:"Sedation, dry mouth"
+},
+
+{
+group:"Antihistamines",
+class:"Second Generation",
+name:"Loratadine",
+indications:"Allergic rhinitis, urticaria",
+adultDose:"10 mg daily",
+pediatricDose:"5 mg daily",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Headache, dry mouth"
+},
+
+{
+group:"Antihistamines",
+class:"Second Generation",
+name:"Cetirizine",
+indications:"Allergies, urticaria",
+adultDose:"10 mg daily",
+pediatricDose:"5 mg daily",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Drowsiness, dry mouth"
+  }
+{
+group:"Bronchodilators",
+class:"Short Acting Beta Agonists",
+name:"Salbutamol",
+indications:"Asthma, bronchospasm, COPD",
+adultDose:"2–4 mg every 6–8 hours",
+pediatricDose:"0.1 mg/kg/dose",
+neonatalDose:"Specialist use",
+route:"Oral, Inhalation, Nebulization",
+sideEffects:"Tremor, tachycardia, nervousness"
+},
+
+{
+group:"Bronchodilators",
+class:"Anticholinergics",
+name:"Ipratropium",
+indications:"COPD, asthma",
+adultDose:"2 inhalations every 6 hours",
+pediatricDose:"250 mcg nebulized",
+neonatalDose:"Specialist use",
+route:"Inhalation, Nebulization",
+sideEffects:"Dry mouth, cough"
+},
+
+{
+group:"Bronchodilators",
+class:"Methylxanthines",
+name:"Aminophylline",
+indications:"Severe asthma, bronchospasm",
+adultDose:"5 mg/kg loading dose",
+pediatricDose:"5–6 mg/kg",
+neonatalDose:"3–5 mg/kg",
+route:"IV, Oral",
+sideEffects:"Tachycardia, nausea, seizures"
+}
+{
+group:"Corticosteroids",
+class:"Glucocorticoids",
+name:"Hydrocortisone",
+indications:"Allergic reactions, adrenal insufficiency",
+adultDose:"100 mg IV every 6 hours",
+pediatricDose:"2 mg/kg",
+neonatalDose:"1–2 mg/kg",
+route:"IV, IM, Oral",
+sideEffects:"Hyperglycemia, infection risk"
+},
+
+{
+group:"Corticosteroids",
+class:"Glucocorticoids",
+name:"Prednisolone",
+indications:"Asthma, autoimmune disease",
+adultDose:"5–60 mg daily",
+pediatricDose:"1–2 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral",
+sideEffects:"Weight gain, hypertension"
+},
+
+{
+group:"Corticosteroids",
+class:"Glucocorticoids",
+name:"Dexamethasone",
+indications:"Cerebral edema, severe inflammation",
+adultDose:"4–8 mg daily",
+pediatricDose:"0.15 mg/kg",
+neonatalDose:"0.1 mg/kg",
+route:"IV, IM, Oral",
+sideEffects:"Immunosuppression, hyperglycemia"
+  }
+{
+group:"Antifungals",
+class:"Azoles",
+name:"Fluconazole",
+indications:"Candidiasis, cryptococcal infection",
+adultDose:"150–400 mg daily",
+pediatricDose:"6 mg/kg/day",
+neonatalDose:"6 mg/kg every 48 hours",
+route:"Oral, IV",
+sideEffects:"Nausea, liver toxicity"
+},
+
+{
+group:"Antifungals",
+class:"Polyenes",
+name:"Amphotericin B",
+indications:"Severe systemic fungal infections",
+adultDose:"0.7–1 mg/kg/day",
+pediatricDose:"0.5–1 mg/kg/day",
+neonatalDose:"0.5 mg/kg/day",
+route:"IV",
+sideEffects:"Nephrotoxicity, fever"
+},
+
+{
+group:"Antifungals",
+class:"Topical antifungals",
+name:"Nystatin",
+indications:"Oral candidiasis, fungal skin infections",
+adultDose:"500000 units four times daily",
+pediatricDose:"100000 units four times daily",
+neonatalDose:"100000 units four times daily",
+route:"Oral, Topical",
+sideEffects:"Mild nausea"
+}
+{
+group:"Antivirals",
+class:"Anti-herpes",
+name:"Acyclovir",
+indications:"Herpes simplex, varicella",
+adultDose:"400 mg five times daily",
+pediatricDose:"20 mg/kg/dose",
+neonatalDose:"20 mg/kg IV",
+route:"Oral, IV",
+sideEffects:"Nausea, kidney toxicity"
+},
+
+{
+group:"Antivirals",
+class:"Influenza antivirals",
+name:"Oseltamivir",
+indications:"Influenza A and B",
+adultDose:"75 mg twice daily",
+pediatricDose:"3 mg/kg/dose",
+neonatalDose:"Specialist use",
+route:"Oral",
+sideEffects:"Nausea, vomiting"
+},
+
+{
+group:"Antivirals",
+class:"Antiretrovirals",
+name:"Zidovudine",
+indications:"HIV infection",
+adultDose:"300 mg twice daily",
+pediatricDose:"180 mg/m² twice daily",
+neonatalDose:"4 mg/kg twice daily",
+route:"Oral, IV",
+sideEffects:"Anemia, fatigue"
+}
+{
+group:"Antiemetics",
+class:"Dopamine antagonists",
+name:"Metoclopramide",
+indications:"Nausea, vomiting, gastroparesis",
+adultDose:"10 mg every 8 hours",
+pediatricDose:"0.1 mg/kg",
+neonatalDose:"0.1 mg/kg",
+route:"Oral, IV, IM",
+sideEffects:"Drowsiness, extrapyramidal symptoms"
+},
+
+{
+group:"Antiemetics",
+class:"5HT3 antagonists",
+name:"Ondansetron",
+indications:"Chemotherapy induced vomiting",
+adultDose:"4–8 mg every 8 hours",
+pediatricDose:"0.15 mg/kg",
+neonatalDose:"Specialist use",
+route:"Oral, IV",
+sideEffects:"Headache, constipation"
+},
+
+{
+group:"Antiemetics",
+class:"Antihistamine antiemetics",
+name:"Promethazine",
+indications:"Motion sickness, nausea",
+adultDose:"25 mg every 6 hours",
+pediatricDose:"0.5 mg/kg",
+neonatalDose:"Not recommended",
+route:"Oral, IM",
+sideEffects:"Sedation, dry mouth"
+  }
+{
+group:"Laxatives",
+class:"Osmotic laxatives",
+name:"Lactulose",
+indications:"Constipation, hepatic encephalopathy",
+adultDose:"15–30 ml daily",
+pediatricDose:"1 ml/kg/day",
+neonatalDose:"1 ml/kg/day",
+route:"Oral",
+sideEffects:"Bloating, diarrhea"
+},
+
+{
+group:"Laxatives",
+class:"Stimulant laxatives",
+name:"Bisacodyl",
+indications:"Constipation, bowel preparation",
+adultDose:"5–10 mg daily",
+pediatricDose:"5 mg daily",
+neonatalDose:"Not recommended",
+route:"Oral, Rectal",
+sideEffects:"Abdominal cramps"
+},
+
+{
+group:"Laxatives",
+class:"Bulk forming laxatives",
+name:"Psyllium",
+indications:"Chronic constipation",
+adultDose:"1 tablespoon daily",
+pediatricDose:"½ tablespoon daily",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Bloating"
+  }
+{
+group:"Acid Suppressants",
+class:"Proton Pump Inhibitors",
+name:"Omeprazole",
+indications:"GERD, peptic ulcer disease",
+adultDose:"20–40 mg daily",
+pediatricDose:"0.7 mg/kg/day",
+neonatalDose:"0.5 mg/kg/day",
+route:"Oral, IV",
+sideEffects:"Headache, diarrhea"
+},
+
+{
+group:"Acid Suppressants",
+class:"Proton Pump Inhibitors",
+name:"Pantoprazole",
+indications:"Peptic ulcer, GERD",
+adultDose:"40 mg daily",
+pediatricDose:"1 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral, IV",
+sideEffects:"Headache"
+},
+
+{
+group:"Acid Suppressants",
+class:"H2 blockers",
+name:"Ranitidine",
+indications:"Peptic ulcer disease",
+adultDose:"150 mg twice daily",
+pediatricDose:"2 mg/kg/dose",
+neonatalDose:"1 mg/kg/dose",
+route:"Oral, IV",
+sideEffects:"Headache, dizziness"
+  }
+{
+group:"Emergency Drugs",
+class:"Vasopressors",
+name:"Adrenaline",
+indications:"Cardiac arrest, anaphylaxis",
+adultDose:"1 mg IV during arrest",
+pediatricDose:"0.01 mg/kg",
+neonatalDose:"0.01 mg/kg",
+route:"IV, IM",
+sideEffects:"Tachycardia, hypertension"
+},
+
+{
+group:"Emergency Drugs",
+class:"Anticholinergics",
+name:"Atropine",
+indications:"Bradycardia, organophosphate poisoning",
+adultDose:"0.5 mg IV",
+pediatricDose:"0.02 mg/kg",
+neonatalDose:"0.02 mg/kg",
+route:"IV, IM",
+sideEffects:"Dry mouth, tachycardia"
+},
+
+{
+group:"Emergency Drugs",
+class:"Opioid antagonists",
+name:"Naloxone",
+indications:"Opioid overdose",
+adultDose:"0.4 mg IV",
+pediatricDose:"0.01 mg/kg",
+neonatalDose:"0.01 mg/kg",
+route:"IV, IM",
+sideEffects:"Withdrawal symptoms"
+}
+{
+group:"Antituberculosis",
+class:"First line TB drugs",
+name:"Isoniazid",
+indications:"Tuberculosis",
+adultDose:"5 mg/kg/day",
+pediatricDose:"10 mg/kg/day",
+neonatalDose:"10 mg/kg/day",
+route:"Oral",
+sideEffects:"Peripheral neuropathy, hepatotoxicity"
+},
+
+{
+group:"Antituberculosis",
+class:"First line TB drugs",
+name:"Rifampicin",
+indications:"Tuberculosis, leprosy",
+adultDose:"10 mg/kg/day",
+pediatricDose:"15 mg/kg/day",
+neonatalDose:"10 mg/kg/day",
+route:"Oral",
+sideEffects:"Orange body fluids, hepatotoxicity"
+},
+
+{
+group:"Antituberculosis",
+class:"First line TB drugs",
+name:"Ethambutol",
+indications:"Tuberculosis",
+adultDose:"15 mg/kg/day",
+pediatricDose:"20 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral",
+sideEffects:"Optic neuritis"
+},
+
+{
+group:"Antituberculosis",
+class:"First line TB drugs",
+name:"Pyrazinamide",
+indications:"Tuberculosis",
+adultDose:"25 mg/kg/day",
+pediatricDose:"30 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral",
+sideEffects:"Hepatotoxicity, joint pain"
+}
+{
+group:"Hormonal Drugs",
+class:"Thyroid hormone",
+name:"Levothyroxine",
+indications:"Hypothyroidism",
+adultDose:"50–100 mcg daily",
+pediatricDose:"4 mcg/kg/day",
+neonatalDose:"10–15 mcg/kg/day",
+route:"Oral",
+sideEffects:"Palpitations"
+},
+
+{
+group:"Hormonal Drugs",
+class:"Glucocorticoids",
+name:"Prednisone",
+indications:"Autoimmune disease, inflammation",
+adultDose:"5–60 mg daily",
+pediatricDose:"1 mg/kg/day",
+neonatalDose:"Specialist use",
+route:"Oral",
+sideEffects:"Weight gain, hypertension"
+},
+
+{
+group:"Hormonal Drugs",
+class:"Estrogens",
+name:"Ethinylestradiol",
+indications:"Contraception",
+adultDose:"20–35 mcg daily",
+pediatricDose:"Not routine",
+neonatalDose:"Not recommended",
+route:"Oral",
+sideEffects:"Nausea, thrombosis"
+}
