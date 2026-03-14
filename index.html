@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>PharmPocket</title>
+
+<style>
+
+body{
+font-family:Arial;
+padding:20px;
+background:#f2f2f2;
+}
+
+h1{
+color:#1e88e5;
+}
+
+input,select,button{
+padding:8px;
+margin:5px;
+}
+
+.drugCard{
+background:white;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+box-shadow:0 2px 4px rgba(0,0,0,0.1);
+cursor:pointer;
+}
+
+.groupBtn{
+background:#1e88e5;
+color:white;
+border:none;
+padding:8px;
+margin:4px;
+border-radius:5px;
+}
+
+#drugDetails{
+background:white;
+padding:15px;
+margin-top:20px;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>PharmPocket</h1>
+
+<h3>Search Drug</h3>
+
+<input type="text" id="searchInput" placeholder="Search drug name">
+<button onclick="searchDrug()">Search</button>
+
+<h3>Browse Drug Groups</h3>
+
+<div id="groups">
+
+<button class="groupBtn" onclick="filterGroup('Antibiotics')">Antibiotics</button>
+<button class="groupBtn" onclick="filterGroup('Antimalarials')">Antimalarials</button>
+<button class="groupBtn" onclick="filterGroup('Analgesics')">Analgesics</button>
+<button class="groupBtn" onclick="filterGroup('Antihypertensives')">Antihypertensives</button>
+<button class="groupBtn" onclick="filterGroup('Diuretics')">Diuretics</button>
+<button class="groupBtn" onclick="filterGroup('Anticoagulants')">Anticoagulants</button>
+<button class="groupBtn" onclick="filterGroup('Antiplatelets')">Antiplatelets</button>
+<button class="groupBtn" onclick="filterGroup('Antidiabetics')">Antidiabetics</button>
+<button class="groupBtn" onclick="filterGroup('Bronchodilators')">Bronchodilators</button>
+<button class="groupBtn" onclick="filterGroup('Antiepileptics')">Antiepileptics</button>
+
+</div>
+
+<h3>Drugs</h3>
+
+<div id="results"></div>
+<div id="drugDetails" style="display:none">
+
+<h2 id="dName"></h2>
+
+<p><b>Class:</b> <span id="dClass"></span></p>
+<p><b>Indications:</b> <span id="dInd"></span></p>
+<p><b>Adult Dose:</b> <span id="dAdult"></span></p>
+<p><b>Pediatric Dose:</b> <span id="dPed"></span></p>
+<p><b>Route:</b> <span id="dRoute"></span></p>
+<p><b>Side Effects:</b> <span id="dSide"></span></p>
+
+<button onclick="closeDrug()">Close</button>
+
+</div>
+<h3>Pediatric Dose Calculator</h3>
+
+<input type="number" id="weight" placeholder="Weight in kg">
+
+<select id="drugDose">
+
+<option value="10">Paracetamol (10 mg/kg)</option>
+<option value="20">Amoxicillin (20 mg/kg)</option>
+<option value="5">Gentamicin (5 mg/kg)</option>
+<option value="15">Ceftriaxone (15 mg/kg)</option>
+
+</select>
+
+<button onclick="calculateDose()">Calculate</button>
+
+<p id="doseResult"></p>
+<h3>Disease Drug Finder</h3>
+
+<input type="text" id="diseaseInput" placeholder="Enter disease">
+
+<button onclick="findDrugs()">Find Drugs</button>
+<h3>Drug Interaction Checker</h3>
+
+<input type="text" id="drug1" placeholder="First drug">
+
+<input type="text" id="drug2" placeholder="Second drug">
+
+<button onclick="checkInteraction()">Check</button>
+
+<p id="interactionResult"></p>
+<script>
+  const drugs = [
+
+{
+group:"Antibiotics",
+class:"Penicillins",
+name:"Amoxicillin",
+indications:"Respiratory infections, otitis media, UTI",
+adultDose:"500 mg every 8 hours",
+pediatricDose:"20–40 mg/kg/day",
+route:"Oral",
+sideEffects:"Rash, diarrhea"
+},
+
+{
+group:"Antibiotics",
+class:"Cephalosporins",
+name:"Ceftriaxone",
+indications:"Sepsis, pneumonia, meningitis",
+adultDose:"1–2 g daily",
+pediatricDose:"50–75 mg/kg/day",
+route:"IV/IM",
+sideEffects:"Biliary sludging"
+},
+
+{
+group:"Antimalarials",
+class:"Artemisinin Combination",
+name:"Artemether Lumefantrine",
+indications:"Malaria",
+adultDose:"80/480 mg twice daily",
+pediatricDose:"Weight based",
+route:"Oral",
+sideEffects:"Headache"
+},
+
+{
+group:"Analgesics",
+class:"Non opioid",
+name:"Paracetamol",
+indications:"Pain, fever",
+adultDose:"500–1000 mg",
+pediatricDose:"10–15 mg/kg",
+route:"Oral",
+sideEffects:"Liver toxicity"
+},
+
+{
+group:"Antihypertensives",
+class:"ACE inhibitors",
+name:"Enalapril",
+indications:"Hypertension",
+adultDose:"5–20 mg",
+pediatricDose:"0.1 mg/kg",
+route:"Oral",
+sideEffects:"Cough"
+}
+
+];
+  function displayDrugs(list){
+
+let output="";
+
+list.forEach(d=>{
+
+output += `
+<div class="drugCard" onclick="openDrug('${d.name}')">
+
+<h3>${d.name}</h3>
+<p>${d.class}</p>
+
+</div>
+`;
+
+});
+
+document.getElementById("results").innerHTML = output;
+
+}
+
+function searchDrug(){
+
+let term = document.getElementById("searchInput").value.toLowerCase();
+
+let results = drugs.filter(d =>
+d.name.toLowerCase().includes(term)
+);
+
+displayDrugs(results);
+
+}
+
+function filterGroup(group){
+
+let results = drugs.filter(d => d.group == group);
+
+displayDrugs(results);
+
+}
+
+function openDrug(name){
+
+let drug = drugs.find(d => d.name == name);
+
+document.getElementById("drugDetails").style.display="block";
+
+document.getElementById("dName").innerHTML = drug.name;
+document.getElementById("dClass").innerHTML = drug.class;
+document.getElementById("dInd").innerHTML = drug.indications;
+document.getElementById("dAdult").innerHTML = drug.adultDose;
+document.getElementById("dPed").innerHTML = drug.pediatricDose;
+document.getElementById("dRoute").innerHTML = drug.route;
+document.getElementById("dSide").innerHTML = drug.sideEffects;
+
+}
+
+function closeDrug(){
+
+document.getElementById("drugDetails").style.display="none";
+
+}
+
+displayDrugs(drugs);
+  function calculateDose(){
+
+let weight = document.getElementById("weight").value;
+
+let dosePerKg = document.getElementById("drugDose").value;
+
+let result = weight * dosePerKg;
+
+document.getElementById("doseResult").innerHTML =
+"Recommended dose: " + result + " mg";
+
+}
+
+function findDrugs(){
+
+let disease = document.getElementById("diseaseInput").value.toLowerCase();
+
+let results = drugs.filter(d =>
+d.indications.toLowerCase().includes(disease)
+);
+
+displayDrugs(results);
+
+}
+
+const interactions = [
+
+{a:"warfarin",b:"aspirin",effect:"High bleeding risk"},
+
+{a:"rifampicin",b:"oral contraceptives",effect:"Reduced contraceptive effect"}
+
+];
+
+function checkInteraction(){
+
+let d1 = document.getElementById("drug1").value.toLowerCase();
+
+let d2 = document.getElementById("drug2").value.toLowerCase();
+
+let found = interactions.find(i =>
+(i.a==d1 && i.b==d2) || (i.a==d2 && i.b==d1)
+);
+
+if(found){
+
+document.getElementById("interactionResult").innerHTML =
+"⚠ Interaction: " + found.effect;
+
+}
+
+else{
+
+document.getElementById("interactionResult").innerHTML =
+"No major interaction";
+
+}
+
+  }
+  </script>
+</body>
+</html>
